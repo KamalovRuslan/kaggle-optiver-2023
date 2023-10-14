@@ -1,0 +1,1 @@
+docker run -v $PWD:/tmp/working -w=/tmp/working -p 8017:8888 --gpus all --rm -it gcr.io/kaggle-gpu-images/python:latest jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
